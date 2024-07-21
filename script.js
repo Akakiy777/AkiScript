@@ -1,3 +1,3 @@
 $('document').ready(function(){
-    alert(09);
+    $('title').text('youtube.com')
 });
