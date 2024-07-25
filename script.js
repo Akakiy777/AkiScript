@@ -1,0 +1,7 @@
+$('document').ready(function(){
+    $('.buy').submit(function(){
+        var name = document.getElementById('names').value;
+        var number = String(Math.floor(Math.random() * (9999 - 1000) + 1000))+'-'+String(Math.floor(Math.random() * (9999 - 1000) + 1000))
+        $('html').html("<html><head><meta charset='UTF-8'><title>Успешно</title><link rel='shortcut icon' href='https://mimirka.ru/sites/default/files/mishka-teddi-40sm.jpg'><script src='jquery-3.7.1.min.js'></script> </head><body><style>body{margin: 0;padding: 0;}main{text-align: center;box-shadow: 0 0 3vh pink;margin: 5vh;border-radius: 5vh;padding: 2vh;background: linear-gradient(to right, pink,rgb(209, 55, 81));}span{margin-bottom: 3vh;font-size: 250%;font-weight: bolder;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(78, 38, 9);}.set{margin: 3vh;margin-bottom: 5vh;}button{height: 8vh;width: 80%;border-radius: 2vh;border: none;background: linear-gradient(orange,yellow);font-size: 250%;font-weight: bolder;}</style><main><div class='data'><div class='set'><span>Дорогой </span><span id='name'>"+name+"</span></div><div class='set'><span>Ваша покупка успешна</span></div><div class='set'><span>Заказ придёт в течение 7 дней</span></div><div class='set'><span>Номер вашего заказа: "+number+"</span></div></div><a href='main.html'><button id='close'>Закрыть</button></a></main></body></html>")
+    });
+});
